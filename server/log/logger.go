@@ -7,7 +7,7 @@ import (
 	"go.uber.org/zap/zapcore"
 	"os"
 
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/config"
+	"github.com/hurricane5250/MyGoProject/server/config"
 )
 
 var zapLogger *zap.Logger
@@ -23,7 +23,10 @@ func WithCtx(ctx context.Context) *Logger {
 }
 
 func Close() {
-	zapLogger.Sync()
+	err := zapLogger.Sync()
+	if err != nil {
+		return
+	}
 }
 
 // Init 初始化配置日志模块

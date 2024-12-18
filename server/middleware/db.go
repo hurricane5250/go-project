@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/log"
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/model"
+	"github.com/hurricane5250/MyGoProject/server/log"
+	"github.com/hurricane5250/MyGoProject/server/model"
 )
 
 // MakeMigrations 迁移数据库表

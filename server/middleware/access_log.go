@@ -3,7 +3,7 @@ package middleware
 import (
 	"bytes"
 	"github.com/gin-gonic/gin"
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/log"
+	"github.com/hurricane5250/MyGoProject/server/log"
 	"go.uber.org/zap"
 	"io"
 	"time"

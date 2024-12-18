@@ -3,8 +3,8 @@ package model
 import (
 	"context"
 	"fmt"
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/config"
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/log"
+	"github.com/hurricane5250/MyGoProject/server/config"
+	"github.com/hurricane5250/MyGoProject/server/log"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

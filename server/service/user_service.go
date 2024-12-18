@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	. "gitlab.meizu.com/wujunfeng/go-nuclear/server/model"
+	. "github.com/hurricane5250/MyGoProject/server/model"
 )
 
 type UserService struct{}

@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"gitlab.meizu.com/wujunfeng/go-nuclear/server/api/v1"
+	"github.com/hurricane5250/MyGoProject/server/api/v1"
 )
 
 func RegisterRoutes(server *gin.Engine) {
