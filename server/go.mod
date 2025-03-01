@@ -1,6 +1,6 @@
-module gitlab.meizu.com/wujunfeng/go-nuclear/server
+module github.com/hurricane5250/go-project/server
 
-go 1.22.1
+go 1.24.0
 
 require (
 	github.com/gin-gonic/gin v1.9.1

@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/hurricane5250/MyGoProject/server/log"
-	"github.com/hurricane5250/MyGoProject/server/model"
+	"github.com/hurricane5250/go-project/server/log"
+	"github.com/hurricane5250/go-project/server/model"
 )
 
 // MakeMigrations 迁移数据库表
@@ -13,7 +13,7 @@ func MakeMigrations() {
 			&model.User{},
 		)
 	if err != nil {
-		log.Error("[ error ] 生成数据库表失败")
+		log.Error("[ error ] 生成数据库表失败: %v", err)
 		return
 	}
 	log.Info("[ success ] 生成数据库表成功")

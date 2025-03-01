@@ -2,7 +2,7 @@ package v1
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/hurricane5250/MyGoProject/server/service"
+	"github.com/hurricane5250/go-project/server/service"
 	"strconv"
 )
 

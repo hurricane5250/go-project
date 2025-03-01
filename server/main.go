@@ -6,11 +6,11 @@ import (
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/hurricane5250/MyGoProject/server/config"
-	"github.com/hurricane5250/MyGoProject/server/log"
-	"github.com/hurricane5250/MyGoProject/server/middleware"
-	"github.com/hurricane5250/MyGoProject/server/model"
-	"github.com/hurricane5250/MyGoProject/server/router"
+	"github.com/hurricane5250/go-project/server/config"
+	"github.com/hurricane5250/go-project/server/log"
+	"github.com/hurricane5250/go-project/server/middleware"
+	"github.com/hurricane5250/go-project/server/model"
+	"github.com/hurricane5250/go-project/server/router"
 	"net/http"
 	"os"
 	"os/signal"
@@ -103,6 +103,8 @@ func getEngine(cfg *config.App) *gin.Engine {
 	engine.Use(middleware.AccessLog())
 	//跨域
 	engine.Use(middleware.Cors())
+	//数据库迁移
+	middleware.MakeMigrations()
 	router.RegisterRoutes(engine)
 	return engine
 }

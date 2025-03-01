@@ -7,7 +7,7 @@ import (
 	"go.uber.org/zap/zapcore"
 	"os"
 
-	"github.com/hurricane5250/MyGoProject/server/config"
+	"github.com/hurricane5250/go-project/server/config"
 )
 
 var zapLogger *zap.Logger
